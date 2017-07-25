@@ -17,3 +17,10 @@ You want to backup a folder on HDD1:
 * Next time you run it:
     * Addition and modification files are copied into the target folder and other files (unmodified) are copied via symlinks
 * Each folder contains the arboresence of the source folder
+
+```
+./backup.sh ~/TEST-BK ~/TEST/
+```
+```
+./backup.sh TARGET ~SOURCE/
+```
