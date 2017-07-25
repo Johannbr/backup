@@ -2,8 +2,8 @@
 today=`date "+%Y-%m-%d_%H:%M:%S"`
 # echo $mydate
 
-TARGET=~/TEST-BK
-SOURCE=~/TEST/
+TARGET=$1
+SOURCE=$2
 
 FOLDER_ARRAY=()
 
@@ -31,4 +31,4 @@ echo "/usr/bin/rsync -a --no-o --delete --safe-links --link-dest=$most_recent $S
 /usr/bin/rsync -a --no-o --delete --safe-links --link-dest=$most_recent $SOURCE $TARGET/$today/ --exclude backup.sh
 
 # Supprime le répertoire le plus ancien
-//TODO
+# TODO
