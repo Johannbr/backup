@@ -28,7 +28,7 @@ fi
 
 # Lance la commande rsync avec la target la plus récente, la source et la target d'aujourd'hui
 echo "/usr/bin/rsync -a --info=progress --no-o --delete --safe-links --link-dest=$most_recent $SOURCE $TARGET/$today/ --exclude backup.sh"
-/usr/bin/rsync -a --info=progres --no-o --delete --safe-links --link-dest=$most_recent $SOURCE $TARGET/$today/ --exclude backup.sh
+/usr/bin/rsync -a --info=progress --no-o --delete --safe-links --link-dest=$most_recent $SOURCE $TARGET/$today/ --exclude backup.sh
 
 # Supprime le répertoire le plus ancien
 # TODO
