@@ -30,5 +30,9 @@ fi
 echo "/usr/bin/rsync -av --progress --no-o --delete --safe-links --link-dest=$most_recent $SOURCE $TARGET/$today/ --exclude backup.sh"
 /usr/bin/rsync -av --progress --no-o --delete --safe-links --link-dest=$most_recent $SOURCE $TARGET/$today/ --exclude backup.sh
 
+# Display size information
+echo "Folder size: "
+du -hc --max-depth=0 $1/*
+
 # Supprime le répertoire le plus ancien
 # TODO
