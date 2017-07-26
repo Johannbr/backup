@@ -1,5 +1,5 @@
 #!/bin/bash
-today=`date "+%Y-%m-%d_%H:%M:%S"`
+today=`date "+%Y-%m-%d_%H-%M-%S"`
 # echo $mydate
 
 TARGET=$1
