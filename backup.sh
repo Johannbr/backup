@@ -9,8 +9,8 @@ FOLDER_ARRAY=()
 
 # Scan tous les répertoires
 for d in $TARGET/*/ ; do
-# Le répertoire doit contenir "201"
-if [[ $d == *"201"* ]]; then
+# Le répertoire doit contenir "202"
+if [[ $d == *"202"* ]]; then
     FOLDER_ARRAY+=($d)
 fi
 done
